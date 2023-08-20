@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Syafiq MK">
+    <meta name="description" content="My simple page">
+    <title>Syafiq's Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header id="header">
+        <h1 id="head-logo">Syafiq MK</h1>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="pages/about.html">about me</a>
+            <!-- <a href="">contact</a> -->
+            <a id="change-theme" onclick="changeTheme()">change theme</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Artikel</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h4>Eksplorasi Keindahan Desa Lauterbrunnen di Swiss: Sebuah Surga Alpen yang Tersembunyi</h4>
+                <img src="assets/lauterbrunnen.jpg" alt="">
+                <a href="pages/article.html">Baca Selengkapnya</a>
+            </div>
+            <div class="card">
+                <h4>Eksplorasi Keindahan Desa Lauterbrunnen di Swiss: Sebuah Surga Alpen yang Tersembunyi</h4>
+                <img src="assets/lauterbrunnen.jpg" alt="">
+                <a href="pages/article.html">Baca Selengkapnya</a>
+            </div>
+            <div class="card">
+                <h4>Eksplorasi Keindahan Desa Lauterbrunnen di Swiss: Sebuah Surga Alpen yang Tersembunyi</h4>
+                <img src="assets/lauterbrunnen.jpg" alt="">
+                <a href="pages/article.html">Baca Selengkapnya</a>
+            </div>
+            <div class="card">
+                <h4>Eksplorasi Keindahan Desa Lauterbrunnen di Swiss: Sebuah Surga Alpen yang Tersembunyi</h4>
+                <img src="assets/lauterbrunnen.jpg" alt="">
+                <a href="pages/article.html">Baca Selengkapnya</a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <p>With ❤ By. Syafiq Muhammad Kahfi</p>
+    </footer>
+
+    <script>
+        let theme = localStorage.getItem('theme');
+        if (theme == 'dark') {
+            themeToggle();
+        }
+
+        function themeToggle() {
+            let body = document.getElementById('body');
+            let main = document.getElementById('main');
+            let header = document.getElementById('header');
+            let footer = document.getElementById('footer');
+            body.classList.toggle('dark');
+            main.classList.toggle('dark');
+            header.classList.toggle('dark');
+            footer.classList.toggle('dark');
+        }
+        
+        function changeTheme() {
+            let theme = localStorage.getItem('theme');
+            if (theme == 'dark') {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+
+            themeToggle();
+        }
+
+    </script>
+
+</body>
+</html>

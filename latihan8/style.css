@@ -1,0 +1,183 @@
+:root {
+    --color1: #2C3333;
+    --color2: #395B64;
+    --color3: #A5C9CA;
+    --color4: #E7F6F2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+body#login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body#login .login {
+    padding: 20px;
+    width: 25%;
+    background-color: var(--color2);
+    border-radius: 25px;
+    color: white;
+}
+
+body#login .login h2 {
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+body#login .login .input {
+    margin: 20px 0;
+}
+
+body#login .login .input label {
+    display: block;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+body#login .login .input input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+body#login .login .button {
+    text-align: right;
+}
+
+body#login .login .button button {
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+body#login .login .button button[type='reset'] {
+    background-color: transparent;
+    color: white;
+    transition-duration: 400ms;
+}
+
+body#login .login .button button[type='reset']:hover {
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    transition-duration: 400ms;
+}
+
+body#login .login .button button[type='submit'] {
+    transition-duration: 400ms;
+}
+
+body#login .login .button button[type='submit']:hover {
+    background-color: var(--color1);
+    color: white;
+    border: 1px solid white;
+    transition-duration: 400ms;
+}
+
+/* dashboard */
+body header {
+    padding: 20px 0;
+    background-color: var(--color1);
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+body header .content {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+}
+
+body header .content h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body header .content nav a {
+    display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition-duration: 400ms;
+}
+
+body header .content nav a:hover {
+    border-bottom: 2px solid white;
+    transition: border-bottom 400ms fade-out;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    padding: 25px 0;
+}
+
+main a#tambah {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 0;
+    background-color: slateblue;
+    border-radius: 5px;
+    padding: 10px 25px;
+}
+
+main table {
+    width: 100%;
+}
+
+main table thead {
+    background-color: var(--color2);
+    color: white;
+}
+
+main table tr:nth-child(even) {
+    background-color: #A5C9CA;
+}
+
+main table tr td, main table th {
+    padding: 10px;
+}
+
+main table tr td img {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+main table a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+main table a.edit {
+    background-color: rgb(20, 194, 20);
+}
+
+main table a.hapus {
+    background-color: rgb(194, 20, 20);
+}

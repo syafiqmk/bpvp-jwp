@@ -1,0 +1,162 @@
+:root {
+    --color1 : #222831;
+    --color2 : #393E46;
+    --color3 : #00ADB5;
+    --color4 : #EEEEEE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color4);
+    color: black;
+    transition-duration: 400ms;
+}
+
+.dark {
+    background-color: var(--color1);
+    color: white;
+    transition-duration: 400ms;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 5vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color2);
+    color: white;
+    transition-duration: 400ms;
+}
+
+header.dark, footer.dark {
+    background-color: var(--color3);
+    transition-duration: 400ms;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav a{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 25px;
+    margin: 0 2px;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition-duration: 400ms;
+}
+
+header nav a:hover {
+    background-color: var(--color3);
+    border: 2px solid white;
+    transition-duration: 400ms;
+}
+
+header.dark nav a:hover {
+    background-color: white;
+    color: var(--color3);
+    border: 2px solid var(--color3);
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    background-color: var(--color1);
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+main {
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+    padding: 30px 5vw 100px 5vw;
+    min-height: 90vh;
+}
+
+main.dark {
+    background-color: var(--color2);
+}
+
+main .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+main .cards .card {
+    padding: 10px 20px;
+}
+
+main .cards .card img {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+main .cards .card a {
+    text-decoration: none;
+    background-color: var(--color3);
+    padding: 10px 25px;
+    color: white;
+    display: inline-block;
+}
+
+main article {
+    text-align: justify;
+}
+
+main article .img {
+    margin: 20px auto;
+}
+
+main article .img img{
+    width: 100%;
+    margin: auto;
+}
+
+main article .img span {
+    font-size: 0.75rem;
+}
+
+main article span#penulis {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+main article p {
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+main .about img {
+    border-radius: 50%;
+    width: 25%;
+    display: block;
+    margin: 20px auto;
+}
+
+main .about .content {
+    text-align: center;
+}

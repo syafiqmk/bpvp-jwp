@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Syafiq MK">
+    <meta name="description" content="My simple page">
+    <title>Syafiq's Personal Blog</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body id="body">
+    <header id="header">
+        <h1 id="head-logo">Syafiq MK</h1>
+        <nav>
+            <a href="../index.html">home</a>
+            <a href="about.html">about me</a>
+            <!-- <a href="">contact</a> -->
+            <a id="change-theme" onclick="changeTheme()">change theme</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <article>
+            <h1>Eksplorasi Keindahan Desa Lauterbrunnen di Swiss: Sebuah Surga Alpen yang Tersembunyi</h1>
+            <div class="img">
+                <img src="../assets/lauterbrunnen.jpg" alt="Lauterbrunnen">
+                <span>Foto Lauterbrunnen</span>
+            </div>
+
+            <span id="penulis">Penulis : ChatGPT | Syafiq Muhammad Kahfi</span>
+
+            <p>Jika Anda sedang merencanakan liburan yang penuh dengan pemandangan alam yang menakjubkan, udara segar pegunungan, dan pesona desa yang memikat, maka Desa Lauterbrunnen di Swiss adalah destinasi yang tidak boleh Anda lewatkan. Terletak di lembah yang indah di Pegunungan Alpen, Lauterbrunnen menawarkan pengalaman liburan yang tak terlupakan bagi para pelancong yang mencari kedamaian dan keindahan alam yang memukau.</p>
+
+            <h3>Pesona Alam yang Menakjubkan</h3>
+
+            <p>Desa Lauterbrunnen dikelilingi oleh pemandangan spektakuler yang menampilkan air terjun yang mengejutkan dan puncak-puncak gunung yang menjulang tinggi. Dengan lebih dari 70 air terjun yang tersebar di seluruh lembah, Lauterbrunnen dianggap sebagai "Lembah 72 Air Terjun." Air terjun tertinggi di Eropa, Staubbach Falls, juga terletak di sini. Sensasi melihat air mengalir dari ketinggian gunung dan menciptakan kabut yang indah adalah pengalaman yang tak terlupakan.</p>
+
+            <h3>Aktivitas Luar Ruangan</h3>
+
+            <p>Bagi para penggemar alam bebas dan petualangan, Desa Lauterbrunnen menawarkan berbagai aktivitas yang menarik. Anda dapat melakukan hiking di jalur-jalur yang melintasi hutan-hutan hijau dan ladang bunga yang indah. Jika Anda mencari tantangan lebih, Anda dapat memilih untuk mendaki gunung atau bersepeda gunung di sekitar daerah ini.</p>
+
+            <h3>Daya Tarik Utama: Jungfrau Region</h3>
+
+            <p>Desa Lauterbrunnen adalah pintu gerbang menuju Jungfrau Region yang terkenal. Dengan kereta gantung yang modern, Anda dapat mencapai puncak Jungfraujoch, yang dikenal sebagai "Atap Eropa." Dari sini, Anda akan dikelilingi oleh pemandangan gunung-gunung megah dan dapat menikmati berbagai kegiatan, seperti bermain ski, snowboarding, atau sekadar menikmati keindahan alam dari ketinggian.</p>
+
+            <h3>Akomodasi dan Kehidupan Desa</h3>
+
+            <p>Desa Lauterbrunnen menawarkan berbagai pilihan akomodasi, mulai dari penginapan yang nyaman hingga hotel-hotel bergaya Alpen yang mewah. Anda juga dapat memilih untuk tinggal di salah satu chalet tradisional untuk merasakan atmosfer pedesaan yang otentik.</p>
+
+            <p>Kehidupan desa yang tenang dan damai adalah daya tarik lain dari Lauterbrunnen. Jalan-jalan kecil yang dipenuhi bunga-bunga berwarna-warni, toko-toko kerajinan tangan, dan restoran-restoran yang menyajikan hidangan lokal akan memberi Anda pengalaman yang benar-benar Swiss.</p>
+
+            <h3>Momen yang Tak Terlupakan</h3>
+
+            <p>Tidak peduli apakah Anda berkunjung ke Desa Lauterbrunnen selama musim panas atau musim dingin, setiap saat di sini akan memberi Anda momen yang tak terlupakan. Dari matahari terbit yang memukau hingga langit malam yang bercahaya oleh gemerlap bintang, semua pengalaman di Lauterbrunnen akan meninggalkan kenangan abadi dalam pikiran dan hati Anda.</p>
+
+            <p>Desa Lauterbrunnen di Swiss adalah surga alam yang memukau, di mana pesona alam pegunungan dan daya tarik desa yang damai bersatu sempurna. Jika Anda mencari liburan yang akan menghidupkan kembali semangat Anda dan memberi Anda kesempatan untuk bersatu dengan alam, Lauterbrunnen adalah tempat yang tepat untuk dikunjungi. Dari air terjun yang mengejutkan hingga pemandangan gunung yang megah, setiap momen di sini adalah pengalaman yang luar biasa.</p>
+        </article>
+    </main>
+
+    <footer id="footer">
+        <p>With ❤ By. Syafiq Muhammad Kahfi</p>
+    </footer>
+
+    <script>
+        let theme = localStorage.getItem('theme');
+        if (theme == 'dark') {
+            themeToggle();
+        }
+
+        function themeToggle() {
+            let body = document.getElementById('body');
+            let main = document.getElementById('main');
+            let header = document.getElementById('header');
+            let footer = document.getElementById('footer');
+            body.classList.toggle('dark');
+            main.classList.toggle('dark');
+            header.classList.toggle('dark');
+            footer.classList.toggle('dark');
+        }
+        
+        function changeTheme() {
+            let theme = localStorage.getItem('theme');
+            if (theme == 'dark') {
+                localStorage.setItem('theme', 'light');
+            } else {
+                localStorage.setItem('theme', 'dark');
+            }
+
+            themeToggle();
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            width: 50vw;
+            margin: auto;
+        }
+
+        .radio, .check {
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        
+        table tr td {
+            padding: 10px 0;
+        }
+
+        form input[type="text"], form input[type="password"], form textarea, form select {
+            width: 80%;
+        }
+
+        button {
+            color: white;
+            background-color: green;
+            width: 100%;
+            height: 100%;
+            border: none;
+            font-size: 1.5rem;
+            padding: 10px;
+            display: block;
+        }
+
+        a.btn {
+            color: white;
+            background-color: orange;
+            text-decoration: none;
+            font-size: 1.5rem;
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <table border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <label for="username" class="left">Username</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="user" id="username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="password" class="left">Password</label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="password" name="pass" id="password">
+                </td>
+            </tr>
+            
+
+            <tr>
+                <td colspan="4">
+                    <button type="submit">Login</button>
+                    <p>Belum punya akun? <a href="register.html">Register!</a></p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
